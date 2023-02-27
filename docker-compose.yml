@@ -1,0 +1,13 @@
+version: "3"
+
+volumes: 
+  images:
+
+
+services:
+  app:
+    build: .
+    volumes:
+      - images:/upload
+    ports:
+      - "8080:8080"
